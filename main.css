@@ -1,11 +1,42 @@
-div {
-  border: 20px solid #000; /* this is short hand for setting
-                            the border's width, its type, and color */
-  display: inline-block; /* a way of positioning elements */
-  min-width: 20em; /* the two min styles make the shape */
-  min-height: 25em; /* of the divs oblong*/
-  border-radius: 50%; /* this makes the normally square div round */
-  border-left-color: transparent; /* these remove the color from the left side */
-  border-right-color: transparent; /* the right side */
-  border-bottom-color: transparent; /* and the bottom of the circle */
+
+
+body
+ h1 {
+  text-align: justify;
+  color: blueviolet;
 }
+
+  p {
+   padding: none;
+    width: 400px;
+    height: 200px;
+    text-align: justify;
+  
+}
+.rainbow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 100px;
+}
+
+.arc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+}
+
+.arc.red { border-top-color: red; }
+.arc.orange { border-top-color: orange; width: 90%; height: 90%; }
+.arc.yellow { border-top-color: yellow; width: 80%; height: 80%; }
+.arc.green { border-top-color: green; width: 70%; height: 70%; }
+.arc.blue { border-top-color: blue; width: 60%; height: 60%; }
+.arc.indigo { border-top-color: indigo; width: 50%; height: 50%; }
+.arc.violet { border-top-color: violet; width: 40%; height: 40%; }
+
+/* Center the rainbow in the container */
+.rainbow-container .arc { top: 50%; }
